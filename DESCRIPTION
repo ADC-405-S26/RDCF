@@ -1,0 +1,20 @@
+Package: RDCF
+Title: Comparable Company Analysis (Comps) Valuation in R
+Version: 0.1.0
+Authors@R: 
+    person("Jeb", "Dee", , "jeb.dee@email.com", role = c("aut", "cre"))
+Description: Performs a complete Comparable Company Analysis (Comps) valuation
+    on any publicly traded company using real financial data pulled from Yahoo
+    Finance. Given a stock ticker, the package automatically identifies peer
+    companies in the same industry, retrieves key valuation multiples
+    (P/E, EV/EBITDA, P/S, P/B), and produces an implied valuation range for
+    the target company based on where its peers trade.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Imports: 
+    checkmate,
+    quantmod,
+    rlang,
+    yfinancer
